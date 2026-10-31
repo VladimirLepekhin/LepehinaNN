@@ -1,0 +1,148 @@
+/* ===== Заголовок страницы ===== */
+.gallery-page { padding-top: 72px; } /* под фиксированную шапку */
+
+.gallery-hero {
+  padding: 70px 0 30px;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 55%, #3a7bc8 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-hero::before {
+  content: ''; position: absolute; right: -120px; top: -120px;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: rgba(255,255,255,.05);
+}
+.gallery-hero__title {
+  font-family: var(--font-title); font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800; margin-bottom: 12px;
+}
+.gallery-hero__subtitle { font-size: 17px; opacity: .9; max-width: 560px; }
+
+/* ===== Фильтр по темам ===== */
+.gallery-main { padding: 50px 0 90px; background: var(--bg); }
+.theme-filter {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;
+}
+.theme-btn {
+  padding: 10px 20px; border-radius: 50px; border: 1px solid rgba(45,95,164,.2);
+  background: #fff; color: var(--text); font-family: var(--font-body);
+  font-size: 14px; font-weight: 500; cursor: pointer; transition: .25s;
+}
+.theme-btn:hover { border-color: #f5a623; color: #f5a623 }
+.theme-btn--active {
+  background: var(--primary); border-color: var(--primary); color: #fff;
+}
+
+
+/* ===== Сетка фото ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+.gallery-card {
+  position: relative; border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow); cursor: pointer; transition: .3s;
+  background: var(--bg-alt);
+  aspect-ratio: 4 / 3;
+}
+.gallery-card:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(31,42,68,.15); }
+.gallery-card img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .4s;
+}
+.gallery-card:hover img { transform: scale(1.06); }
+.gallery-card__caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 26px 16px 12px;
+  background: linear-gradient(transparent, rgba(15,23,42,.85));
+  color: #fff; font-size: 13px; font-weight: 500;
+  opacity: 0; transition: .3s;
+}
+.gallery-card:hover .gallery-card__caption { opacity: 1; }
+
+/* Кнопка удаления (видна только в админ-режиме) */
+.gallery-card__remove {
+  position: absolute; top: 8px; right: 8px;
+  width: 32px; height: 32px; border-radius: 50%; border: none;
+  background: rgba(220,38,38,.9); color: #fff; font-size: 15px;
+  cursor: pointer; display: none; align-items: center; justify-content: center;
+}
+body.admin-mode .gallery-card__remove { display: flex; }
+
+.gallery-loading, .gallery-empty {
+  text-align: center; color: var(--muted); padding: 40px 0; font-size: 15px;
+}
+.gallery-loading[hidden], .gallery-empty[hidden] { display: none; }
+
+/* ===== Лайтбокс ===== */
+.lightbox {
+  position: fixed; inset: 0; z-index: 300;
+  display: none; align-items: center; justify-content: center;
+  background: rgba(10, 15, 30, .92);
+  backdrop-filter: blur(8px);
+  padding: 24px;
+}
+.lightbox.active { display: flex; }
+.lightbox__figure {
+  max-width: min(92vw, 1100px); max-height: 88vh;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.lightbox__img {
+  max-width: 100%; max-height: 78vh; object-fit: contain;
+  border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  animation: lbFade .25s ease;
+}
+@keyframes lbFade { from { opacity: 0; transform: scale(.97); } }
+.lightbox__caption { color: #fff; font-size: 15px; text-align: center; opacity: .9; }
+
+.lightbox__close {
+  position: absolute; top: 18px; right: 22px;
+  width: 46px; height: 46px; border-radius: 50%;
+  border: none; background: rgba(255,255,255,.12); color: #fff;
+  font-size: 20px; cursor: pointer; transition: .25s;
+}
+.lightbox__close:hover { background: rgba(255,255,255,.25); }
+
+.lightbox__nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 56px; height: 56px; border-radius: 50%;
+  border: none; background: rgba(255,255,255,.12); color: #fff;
+  font-size: 32px; line-height: 1; cursor: pointer; transition: .25s;
+  display: flex; align-items: center; justify-content: center; padding-bottom: 4px;
+}
+.lightbox__nav:hover { background: rgba(255,255,255,.25); }
+.lightbox__nav--prev { left: 22px; }
+.lightbox__nav--next { right: 22px; }
+
+.lightbox__counter {
+  position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,.7); font-size: 14px; letter-spacing: 1px;
+}
+
+/* ===== Админ-панель: селект темы ===== */
+.admin-bar__select {
+  padding: 9px 14px; border-radius: 50px; border: 1px solid rgba(255,255,255,.3);
+  background: rgba(255,255,255,.08); color: #fff; font-size: 13px;
+  font-family: var(--font-body); outline: none; cursor: pointer;
+}
+.admin-bar__select option { color: var(--text); background: #fff; }
+
+/* ===== Адаптив ===== */
+@media (max-width: 720px) {
+  .gallery-page { padding-top: 72px; }
+  .gallery-hero { padding: 50px 0 24px; }
+  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .gallery-card__caption { opacity: 1; font-size: 12px; padding: 20px 10px 8px; }
+  .lightbox { padding: 12px; }
+  .lightbox__nav { width: 44px; height: 44px; font-size: 26px; }
+  .lightbox__nav--prev { left: 8px; }
+  .lightbox__nav--next { right: 8px; }
+  .lightbox__close { top: 10px; right: 10px; width: 40px; height: 40px; }
+  .admin-bar__label { width: 100%; margin: 0 0 6px; }
+}
+
+/* Активная ссылка в меню */
+.nav__link--active { color: var(--primary); }
+.nav__link--active::after { width: 100%; }

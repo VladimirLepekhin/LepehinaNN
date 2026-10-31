@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фотогалерея — уроки, праздники, экскурсии, проекты">
+  <title>Фотогалерея — Лепехина Наталья Николаевна</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+<link rel="apple-touch-icon" href="images/favicon.jpg">
+</head>
+<body class="gallery-page">
+
+<!-- ================= ШАПКА ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__icon">🎓</span>
+      <span class="logo__text">Лепехина Наталья Николаевна</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html#about" class="nav__link">Обо мне</a>
+      <a href="index.html#method" class="nav__link">Методика</a>
+      <a href="index.html#achievements" class="nav__link">Достижения</a>
+      <a href="index.html#students" class="nav__link">Ученики</a>
+      <a href="gallery.html" class="nav__link nav__link--active">Фото</a>
+      <a href="index.html#materials" class="nav__link">Материалы</a>
+      <a href="index.html#contacts" class="nav__link">Контакты</a>
+      
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= ЗАГОЛОВОК ================= -->
+<section class="gallery-hero">
+  <div class="container">
+    <h1 class="gallery-hero__title">Фотогалерея</h1>
+    <p class="gallery-hero__subtitle">Моменты школьной жизни: уроки, праздники, экскурсии, проекты</p>
+  </div>
+</section>
+
+<!-- ================= ФИЛЬТР + СЕТКА ================= -->
+<section class="gallery-main">
+  <div class="container">
+    <div class="theme-filter" id="themeFilter"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+    <p class="gallery-empty" id="galleryEmpty" hidden>В этой теме пока нет фотографий.</p>
+  </div>
+</section>
+
+<!-- ================= ЛАЙТБОКС ================= -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lbClose" aria-label="Закрыть">✕</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Назад">‹</button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="lbImg" src="" alt="">
+    <figcaption class="lightbox__caption" id="lbCaption"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Вперёд">›</button>
+  <span class="lightbox__counter" id="lbCounter"></span>
+</div>
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 · Лепехина Наталья Николаевна · Сайт участника конкурса «Учитель года»</p>
+    <a href="#" class="footer__up" id="backToTop">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="gallery.js"></script>
+</body>
+</html>

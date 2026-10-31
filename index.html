@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный сайт учителя начальных классов — участника конкурса «Учитель года»">
+  <title>Лепехина Наталья Николаевна - учитель начальных классов</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
+<link rel="apple-touch-icon" href="images/favicon.jpg">
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__icon">🎓</span>
+      <span class="logo__text">Лепехина Наталья Николаевна</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav__link">Обо мне</a>
+      <a href="#method" class="nav__link">Методика</a>
+      <a href="#achievements" class="nav__link">Достижения</a>
+      <a href="#students" class="nav__link">Ученики</a>
+      <a href="gallery.html" class="nav__link">Фото</a>
+      <a href="#materials" class="nav__link">Материалы</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+      
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+<section class="hero" id="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <p class="hero__badge">Участник конкурса «Учитель года — 2027»</p>
+      <h1 class="hero__title">Лепехина<br>Наталья<br>Николаевна</h1>
+      <p class="hero__subtitle">Учитель начальных классов <br> Педагогический стаж — 33 лет</p>
+      <p class="hero__quote">«Учить не мыслям, а мыслить. Воспитывать не словами, а примером»</p>
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--primary">Познакомиться</a>
+        <a href="#materials" class="btn btn--outline">Методическая копилка</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__photo-frame">
+        <img src="images/teacher.jpg" alt="Фото учителя" onerror="this.style.display='none';this.parentNode.classList.add('no-img')">
+        <span class="hero__photo-placeholder"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ОБО МНЕ ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section__title">Обо мне</h2>
+    <div class="about">
+      <div class="about__text">
+        <h3>Педагогическое кредо</h3>
+        <p>Каждый ребёнок — это уникальный мир, который нужно бережно открыть. Моя задача — создать условия, в которых ученик поверит в себя, полюбит учиться и научится думать самостоятельно.</p>
+        <h3>Образование</h3>
+        <ul class="list">
+          <li>Высшее педагогическое образование - ФГБОУ ВПО «Нижегородский государственный педагогический университет», 2012<br>
+            Квалификация: Учитель биологии по специальности «Биология»<br>
+            <a href="javascript:void(0)" class="cert-link" data-img="images/Высшее.jpg">
+            📄 Посмотреть диплом
+            </a>
+          </li>
+          <li>Среднее педагогическое образование - Дзержинское педагогическое училище Нижегородской области, 1993<br>
+            Специальность: «Преподавание в начальных классах общеобразовательной школы»<br>
+            <a href="javascript:void(0)" class="cert-link" data-img="images/Среднее.jpg">
+            📄 Посмотреть диплом
+            </a>
+          </li>
+          <li>Курсы повышения квалификации:
+            <br>   ГБОУ ДПО НИРО «Современные подходы к обучению и воспитанию младших школьников в условиях реализации ФГОС», 2016 год;
+            <br>   ГБОУ ДПО НИРО «Современные подходы к коррекции нарушений развития обучающихся в свете требований ФГОС ОВЗ», 2016 год;
+            <br>   ГБОУ ДПО НИРО «Современные подходы к обучению и воспитанию младших школьников в условиях введения ФГОС», 2013 год. </li>
+        </ul>
+        <h3>Ключевые компетенции</h3>
+        <div class="tags">
+          <span class="tag">ИКТ-компетентность</span>
+          <span class="tag">Системно-деятельностный подход</span>
+          <span class="tag">Развивающее обучение</span>
+          <span class="tag">Здоровьесбережение</span>
+          <span class="tag">Проектная деятельность</span>
+        </div>
+      </div>
+      <div class="about__facts">
+        <div class="fact"><span class="fact__num">33</span><span class="fact__label">лет стажа</span></div>
+        <div class="fact"><span class="fact__num">12</span><span class="fact__label">выпусков</span></div>
+        <div class="fact"><span class="fact__num">6</span><span class="fact__label">учеников в классе</span></div>
+        <div class="fact"><span class="fact__num">26</span><span class="fact__label">наград</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= МЕТОДИКА ================= -->
+<section class="section section--alt" id="method">
+  <div class="container">
+    <h2 class="section__title">Моя методическая система</h2>
+    <p class="section__lead">Целостный подход к обучению, воспитанию и развитию младших школьников</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon">💡</div>
+        <h3 class="card__title">Технология проблемного обучения</h3>
+        <p class="card__text">Создание проблемных ситуаций на уроке, побуждающих детей к самостоятельному поиску решения и «открытию» новых знаний.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">🎨</div>
+        <h3 class="card__title">Проектная деятельность</h3>
+        <p class="card__text">Мини-проекты, интегрированные уроки, творческие мастерские — формирование универсальных учебных действий через практику.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">💻</div>
+        <h3 class="card__title">Цифровые инструменты</h3>
+        <p class="card__text">Интерактивные платформы, обучающие игры, электронные тренажёры для повышения мотивации и индивидуализации обучения.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">❤️</div>
+        <h3 class="card__title">Здоровьесбережение</h3>
+        <p class="card__text">Динамические паузы, физкультминутки, смена видов деятельности, создание комфортной психологической атмосферы.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ДОСТИЖЕНИЯ ================= -->
+<section class="section" id="achievements">
+  <div class="container">
+    <h2 class="section__title">Достижения и награды</h2>
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="timeline__year">2026</span>
+        <div class="timeline__content">
+          <h3>Диплом</h3>
+          <p>Победителя школьного этапа Всероссийского конкурса «Учитель года России»</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105239.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2023</span>
+        <div class="timeline__content">
+          <h3>Благодарность Губернатора Нижегородской области</h3>
+          <p>За многолетний добросовестный труд и высокие достижения в профессиональной деятельности</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105252.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2022</span>
+        <div class="timeline__content">
+          <h3>Благодарственное письмо Управления образования администрации Воскресенского района</h3>
+          <p>В связи с юбилеем</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105256.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2020</span>
+        <div class="timeline__content">
+          <h3>Благодарность администрации школы</h3>
+          <p>За качественные показатели в деле обучения и воспитания детей</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105259.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2020</span>
+        <div class="timeline__content">
+          <h3>Почетная грамота Администрации Воскресенского района</h3>
+          <p>За профессионализм и добросовестный труд по итогам 2019-2020 учебного года</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105305.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2019</span>
+        <div class="timeline__content">
+          <h3>Почетная грамота</h3>
+          <p>Лауреата муниципального конкурса «Учитель года - 2019»</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105303.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2018</span>
+        <div class="timeline__content">
+          <h3>Благодарность Администрации Воскресенского района</h3>
+          <p>В связи с 135-летием школы</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105309.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2018</span>
+        <div class="timeline__content">
+          <h3>Грамота</h3>
+          <p>За добросовестный труд в системе образования и в связи с Днём учителя</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105312.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2017</span>
+        <div class="timeline__content">
+          <h3>Сертификат</h3>
+          <p>Участника муниципального конкурса «Учитель года – 2017»</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105315.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">2015</span>
+        <div class="timeline__content">
+          <h3>Грамота</h3>
+          <p>За участие в муниципальном конкурсе «Учитель года - 2015»</p>
+          <a href="javascript:void(0)" class="cert-link" data-img="images/gallery/МоиДостижения/IMG_20261031_105352.jpg">
+            📄 Посмотреть
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ================= УЧЕНИКИ ================= -->
+<section class="section section--alt" id="students">
+  <div class="container">
+    <h2 class="section__title">Мои ученики</h2>
+    <p class="section__lead">Самый лучший класс - это про нас</p>
+    <div class="gallery">
+      <figure class="gallery__item">
+        <a href="gallery.html#photo=IMG_20261031_212557.jpg" class="nav__link">
+        <img src="images/gallery/КласснаяЖизнь/IMG_20261031_212557.jpg" alt="1 сентября - «День знаний»" onerror="this.parentNode.classList.add('no-img')">
+        <figcaption>1 сентября - «День знаний»</figcaption>
+        </a>
+      </figure>
+      <figure class="gallery__item">
+        <a href="gallery.html#photo=IMG_20261031_212627.jpg" class="nav__link">
+        <img src="images/gallery/КласснаяЖизнь/IMG_20261031_212627.jpg" alt="Победители конкурса «Эрудит»" onerror="this.parentNode.classList.add('no-img')">
+        <figcaption>Победители конкурса «Эрудит»</figcaption>
+        </a>
+      </figure>
+      <figure class="gallery__item">
+        <a href="gallery.html#photo=IMG_20261031_212634.jpg" class="nav__link">
+        <img src="images/gallery/КласснаяЖизнь/IMG_20261031_212634.jpg" alt="Твои безопасные каникулы" onerror="this.parentNode.classList.add('no-img')">
+        <figcaption>Твои безопасные каникулы</figcaption>
+        </a>
+      </figure>
+      <figure class="gallery__item">
+        <a href="gallery.html#photo=IMG_20261031_212618.jpg" class="nav__link">
+        <img src="images/gallery/КласснаяЖизнь/IMG_20261031_212618.jpg" alt="Конструктор «Лидер»" onerror="this.parentNode.classList.add('no-img')">
+        <figcaption>Конструктор «Лидер»</figcaption>
+        </a>
+      </figure>
+    </div>
+    <div class="students-stats">
+      <div class="stat"><span class="stat__num">75%</span><span class="stat__label">качество знаний по итогам года</span></div>
+      <div class="stat"><span class="stat__num">14</span><span class="stat__label">призёров олимпиад и конкурсов</span></div>
+      <div class="stat"><span class="stat__num">100%</span><span class="stat__label">участие в проектной деятельности</span></div>
+    </div>
+  </div>
+</section>
+
+ <!--================= МАТЕРИАЛЫ ================= -->
+<!-- <section class="section" id="materials">
+  <div class="container">
+    <h2 class="section__title">Методическая копилка</h2>
+    <p class="section__lead">Разработки уроков, рабочие программы, дидактические материалы</p>
+    <div class="materials">
+      <a href="doc/Презентация1.pptx" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Рабочая программа по математике (1–4 кл.)</span>
+        <span class="material__meta">PDF · 2 МБ</span>
+      </a>
+      <a href="doc/kabinet_nach.klassov_lepjokhina_nn.pdf" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Конспект урока «Путешествие в страну звуков»</span>
+        <span class="material__meta">PDF · 1,5 МБ</span>
+      </a>
+      <a href="#" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Дидактические игры для 1 класса</span>
+        <span class="material__meta">PDF · 3 МБ</span>
+      </a>
+      <a href="#" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Презентация «Современный урок ФГОС»</span>
+        <span class="material__meta">PPTX · 5 МБ</span>
+      </a>
+      <a href="#" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Статья «Формирование УУД младших школьников»</span>
+        <span class="material__meta">PDF · 0,8 МБ</span>
+      </a>
+      <a href="#" class="material">
+        <span class="material__icon">📄</span>
+        <span class="material__title">Портфолио учителя</span>
+        <span class="material__meta">PDF · 4 МБ</span>
+      </a>
+    </div>
+  </div>
+</section> -->
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section class="section section--dark" id="contacts">
+  <div class="container contacts">
+    <div class="contacts__info">
+      <h2 class="section__title section__title--left">Контакты</h2>
+      <p>Буду рада сотрудничеству, обмену опытом и обратной связи!</p>
+      <ul class="contacts__list">
+        <li>📧 <a href="mailto:natalyalepehina@yandex.ru">natalyalepehina@yandex.ru</a></li>
+        <li>📞 <a href="tel:+79535763640">+7 (953) 576-36-40</a></li>
+        <li>🏫 МОУ Владимирская ОШ, с. Владимирское, Воскресенского р-н, Нижегородской обл.</li>
+        <li>📍 MAX: +79535763640</li>
+      </ul>
+      <div class="socials">
+        <a href="https://vk.ru/id691072429" class="social" aria-label="VK">VK</a>
+        <a href="https://www.youtube.com/@%D0%9D%D0%B0%D1%88%D0%BA%D0%BB%D0%B0%D1%81%D1%81-%D1%837%D1%88" class="social" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+    <div class="qr-block">
+      <h3 class="qr-block__title">Напишите мне в MAX</h3>
+      <img src="images/qr-max.jpg" alt="QR-код для перехода в чат MAX" class="qr-block__img">
+      <p class="qr-block__text">Наведите камеру телефона, чтобы открыть чат</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© 2026 · Лепехина Наталья Николаевна · Сайт участника конкурса «Учитель года»</p>
+    <a href="#hero" class="footer__up">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<div class="lightbox" id="certLightbox" aria-hidden="true">
+  <button class="lightbox__close" id="certLbClose" aria-label="Закрыть">✕</button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="certLbImg" src="" alt="Грамота">
+  </figure>
+</div>
+</body>
+</html>
