@@ -25,7 +25,8 @@ const ALBUMS = [
   { file: 'IMG_20261031_212625.jpg' },
   { file: 'IMG_20261031_212627.jpg' },
   { file: 'IMG_20261031_212634.jpg' },
-  { file: 'IMG_20261031_212638.jpg' }
+  { file: 'IMG_20261031_212638.jpg' },
+  { file: 'IMG_20261101_123457.jpg' }
 
     ]
   },
